@@ -20,6 +20,8 @@
     padding: 0;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+      url(../assets/img/hero-image.jpg);
   }
 
   .hero-text {

@@ -13,7 +13,14 @@
       <input type="email" />
       <label for="password">Password:</label>
       <input type="password" name="password" id="" />
-      <input :disabled="firstName.length === 0" type="submit" value="Sign in" />
+      <div class="space-btn">
+        <input
+          :disabled="firstName.length === 0"
+          type="submit"
+          value="Sign in"
+          class="btn"
+        />
+      </div>
     </form>
     <h3 v-if="message !== null">{{ message }}</h3>
   </div>
@@ -54,13 +61,40 @@
 
   .form-container form label {
     color: white;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .form-container form input {
+    height: 2.5rem;
+    padding: 15px 10px;
+    border-radius: 8px;
+  }
+  .form-container form .space-btn .btn {
+    margin-top: 2rem;
+  }
+  .form-container form .btn {
+    border: 3px solid black;
+    margin-top: 2rem;
+    background-color: red;
+    color: white;
+    height: 3.5rem;
+    border-radius: 8px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* centerar knappen */
+    margin: auto;
+    cursor: pointer;
   }
 
   h3 {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 80%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 35%;

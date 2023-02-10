@@ -6,7 +6,6 @@
         class="card-img-top"
         alt="f1-driver"
       />
-      
       <!-- {{ info.images }} -->
 
       <div class="card-body">
@@ -28,7 +27,6 @@
 </template>
 <script>
   export default {
-
     props: {
       //jag kallar min inhämtning för info
       info: {
