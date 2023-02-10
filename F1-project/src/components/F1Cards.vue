@@ -1,12 +1,7 @@
 <template>
   <div class="col">
     <div class="card" style="width: 18rem">
-      <img
-        src="../assets/img/norris.png"
-        class="card-img-top"
-        alt="f1-driver"
-      />
-      <!-- {{ info.images }} -->
+      <img :src="info.images" class="card-img-top" alt="f1-driver" />
 
       <div class="card-body">
         <h5 class="card-title">{{ info.name }}</h5>
@@ -33,8 +28,11 @@
         require: true,
         type: Object
       }
+    },
+    created() {
+      console.log('info: ', this.info);
     }
-  }
+  };
 </script>
 
 <style scoped>

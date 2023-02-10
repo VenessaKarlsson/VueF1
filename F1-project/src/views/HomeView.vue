@@ -1,6 +1,6 @@
 <script setup>
-  import HeroImage from '../components/HeroImage.vue'
-  import F1Cards from '../components/F1Cards.vue'
+  import HeroImage from '../components/HeroImage.vue';
+  import F1Cards from '../components/F1Cards.vue';
 </script>
 
 <template>
@@ -15,11 +15,7 @@
           inhämtningen. Då berättar jag för dig att jag binder :offer="driver" då kännder den av -->
         <!-- För varje objekt jag hämtar in så ska den bindas med någonting som heter offer
         i F1Cards komponenten-->
-        <driver-info
-          v-for="driver in drivers"
-          :key="driver.id"
-          :info="driver"
-        />
+        <F1Cards v-for="driver in drivers" :key="driver.id" :info="driver" />
       </div>
     </div>
   </div>
@@ -30,30 +26,29 @@
     data() {
       return {
         text: 'Meet our F1 drivers',
-        drivers: [],
-      }
+        drivers: []
+      };
     },
 
-    // här har vi döpt om komoneten F1Cards till driver-info
-    components: { 'driver-info': F1Cards },
     mounted() {
-      this.fetchData()
+      this.fetchData();
     },
     methods: {
       // skapar fetch funktionen i axios
       async fetchData() {
         //säger vad/vilket json objekt som ska fetchas
-        const res = await fetch('F1.json')
+        const res = await fetch('F1.json');
         //här bestämmer man vad man ska göra med fetchen
-        const result = await res.json()
+        const result = await res.json();
         //this.drivers referarar till den tomma arrayen,
         //om man har fått fram någon info från fetchen i from utav json-data så kommer den att skicka
         // info:n till den tomma arrayen drivers [] som man sedan kan hämtas in i komponenten F1Cards
         // console.log(result)
-        this.drivers = result
+        this.drivers = result;
+        // console.log('this.drivers: ', this.drivers[0].images);
       }
     }
-  }
+  };
 </script>
 
 <style scoped>
