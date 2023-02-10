@@ -9,7 +9,6 @@
     <br />
     <h3>Wanna know more about your favorite driver?</h3>
     <h3 class="cards-text">Check out the cards below</h3>
-    >
   </div>
 </template>
 <style scoped>

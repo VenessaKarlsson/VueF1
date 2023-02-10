@@ -1,7 +1,10 @@
+<script setup>
+import SigninHero from '../components/SigninHero.vue'
+import FormInput from '../components/FormInput.vue'
+</script>
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <SigninHero/>
+  <FormInput/>
 </template>
 
 <style>
