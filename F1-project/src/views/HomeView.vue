@@ -15,11 +15,7 @@
           inhämtningen. Då berättar jag för dig att jag binder :offer="driver" då kännder den av -->
         <!-- För varje objekt jag hämtar in så ska den bindas med någonting som heter offer
         i F1Cards komponenten-->
-        <driver-info
-          v-for="driver in drivers"
-          :key="driver.id"
-          :info="driver"
-        />
+        <F1Cards v-for="driver in drivers" :key="driver.id" :info="driver" />
       </div>
     </div>
   </div>
@@ -34,8 +30,6 @@
       };
     },
 
-    // här har vi döpt om komoneten F1Cards till driver-info
-    components: { 'driver-info': F1Cards },
     mounted() {
       this.fetchData();
     },
