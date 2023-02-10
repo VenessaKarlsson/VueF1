@@ -4,12 +4,6 @@
       <img :src="info.images" class="card-img-top" alt="f1-driver" />
 
       <div class="card-body">
-        <h5 class="card-title">{{ info.name }}</h5>
-        <h6 class="card-text">Team: {{ info.team }}</h6>
-        <h6 class="card-text">Country: {{ info.country }}</h6>
-        <h6 class="card-text">Date of birth: {{ info.dateof }}</h6>
-        <h6 class="card-text">Podiums: {{ info.podiums }}</h6>
-
         <!-- <img
           src="../assets/img/haas.png"
           alt=""
