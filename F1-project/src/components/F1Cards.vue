@@ -9,12 +9,6 @@
         <h6 class="card-text">Country: {{ info.country }}</h6>
         <h6 class="card-text">Date of birth: {{ info.dateof }}</h6>
         <h6 class="card-text">Podiums: {{ info.podiums }}</h6>
-
-        <!-- <img
-          src="../assets/img/haas.png"
-          alt=""
-          style="width: 500px, height: 500px;"
-        /> -->
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>

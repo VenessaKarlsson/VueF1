@@ -53,22 +53,23 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 35%;
   }
 
   .form-container form label {
-    color: white;
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
+    color: black;
+    /* margin-bottom: 1rem; */
+    font-size: 1.2rem;
   }
 
   .form-container form input {
-    height: 2.5rem;
-    padding: 15px 10px;
+    height: 2rem;
+    /* padding: 15px 10px; */
     border-radius: 8px;
+    border: 0px solid;
   }
   .form-container form .space-btn .btn {
     margin-top: 2rem;
@@ -98,7 +99,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 35%;
-    color: purple;
+    color: black;
     text-align: center;
   }
 </style>
