@@ -34,7 +34,7 @@
       this.fetchData();
     },
     methods: {
-      // skapar fetch funktionen i axios
+      // skapar fetch funktionen
       async fetchData() {
         //säger vad/vilket json objekt som ska fetchas
         const res = await fetch('F1.json');

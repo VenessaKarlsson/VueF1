@@ -37,6 +37,5 @@
 
   .text-white {
     text-decoration: none;
-    /* margin-bottom: 20px; */
   }
 </style>

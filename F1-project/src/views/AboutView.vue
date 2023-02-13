@@ -20,3 +20,13 @@
   }
 } */
 </style>
+
+<script>
+  import axios from 'axios'
+
+  axios
+    .get('http://makeup-api.herokuapp.com/api/v1/products.json?brand=essie')
+    .then(function (response) {
+      console.log(response.data)
+    })
+</script>

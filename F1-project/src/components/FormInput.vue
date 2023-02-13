@@ -99,7 +99,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 35%;
-    color: black;
+    color: white;
     text-align: center;
   }
 </style>

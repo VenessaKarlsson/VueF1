@@ -2,7 +2,13 @@
   <div id="input-container">
     <h3>Write a secret message to the console</h3>
     <input v-model="write" type="text" />
-    {{ write }}
+    <!-- {{ write }} -->
+
+    <input
+      type="button"
+      :value="$store.state.counter"
+      @click="$store.commit('increment')"
+    />
   </div>
 </template>
 

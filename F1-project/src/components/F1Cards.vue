@@ -9,7 +9,14 @@
         <h6 class="card-text">Country: {{ info.country }}</h6>
         <h6 class="card-text">Date of birth: {{ info.dateof }}</h6>
         <h6 class="card-text">Podiums: {{ info.podiums }}</h6>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <!-- <a href="#" class="btn btn-primary" >Go somewhere</a> -->
+        <button class="btn btn-danger">&#9829; CARD</button>
+        <input
+          class="btn btn-danger"
+          type="button"
+          :value="$store.state.counter"
+          @click="$store.commit('increment')"
+        />
       </div>
     </div>
   </div>
@@ -24,9 +31,9 @@
       }
     },
     created() {
-      console.log('info: ', this.info);
+      console.log('info: ', this.info)
     }
-  };
+  }
 </script>
 
 <style scoped>
@@ -35,5 +42,9 @@
     margin-bottom: 30px;
     /* Höjden på card */
     height: 600px;
+  }
+
+  .btn {
+    margin-left: 20px;
   }
 </style>
