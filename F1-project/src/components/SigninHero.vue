@@ -4,6 +4,7 @@
   </div>
   <div class="signin-text">
     <h1>Sign in to the F1-community!</h1>
+    <!-- Slut datum -->
   </div>
 </template>
 
