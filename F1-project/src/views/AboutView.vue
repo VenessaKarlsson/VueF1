@@ -7,18 +7,12 @@
 <template>
   <SigninHero />
   <FormInput />
-  <DriverStandings />
-  <WatcherForm />
+  <DriverStandings :trivia="'F1-Trivia'"/>
+  <WatcherForm/>
 </template>
 
 <style>
-  /* @media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-} */
+
 </style>
 
 <script>

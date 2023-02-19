@@ -10,7 +10,7 @@
         <h6 class="card-text">Date of birth: {{ info.dateof }}</h6>
         <h6 class="card-text">Podiums: {{ info.podiums }}</h6>
         <!-- <a href="#" class="btn btn-primary" >Go somewhere</a> -->
-        <button class="btn btn-danger">&#9829; CARD</button>
+        <!-- <button class="btn btn-danger">&#9829; CARD</button> -->
         <input
           class="btn btn-danger"
           type="button"
@@ -41,10 +41,11 @@
     /* mellanrun mellan card*/
     margin-bottom: 30px;
     /* Höjden på card */
-    height: 600px;
+    height: 560px;
   }
 
   .btn {
     margin-left: 20px;
+    margin-top: 20px;
   }
 </style>

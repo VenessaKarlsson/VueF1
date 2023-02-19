@@ -1,11 +1,5 @@
 <template>
   <div class="form-container">
-    <!-- <h1>Sign in to F1</h1>
-    <label for="email">Email address</label>
-    <input type="email" v-model="email" placeholder="Enter your email" />
-    <label for="password">Password</label>
-    <input type="password" v-model="password" placeholder="Enter your email" />
-    <button @click="Onclick">Send</button> -->
     <form @submit="onSend">
       <label for="firstname">Firstname:</label>
       <input v-model="firstName" />
@@ -35,7 +29,8 @@
         //preventDefault är en funktion som gör så att sidan inte laddas om, eftersom sumbit laddar om sidan. Vi måste ha ett event parameter, därefter kan vi använda denna parameter och använda preventDefault() funktionen.
         e.preventDefault()
         this.message =
-          'Welcome, ' + this.firstName + ' Your now signed in' + '!'
+          ` Welcome! ${this.firstName} You're now signed in!
+          `
       }
     }
   }
@@ -60,7 +55,7 @@
   }
 
   .form-container form label {
-    color: black;
+    color: white;
     /* margin-bottom: 1rem; */
     font-size: 1.2rem;
   }
@@ -76,8 +71,8 @@
   }
   .form-container form .btn {
     border: 3px solid black;
-    margin-top: 2rem;
-    background-color: red;
+    margin-top: 4rem;
+    background-color: rgb(250, 45, 45);
     color: white;
     height: 3.5rem;
     border-radius: 8px;

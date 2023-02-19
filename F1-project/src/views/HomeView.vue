@@ -1,6 +1,6 @@
 <script setup>
-  import HeroImage from '../components/HeroImage.vue';
-  import F1Cards from '../components/F1Cards.vue';
+  import HeroImage from '../components/HeroImage.vue'
+  import F1Cards from '../components/F1Cards.vue'
 </script>
 
 <template>
@@ -27,28 +27,28 @@
       return {
         text: 'Meet our F1 drivers',
         drivers: []
-      };
+      }
     },
 
     mounted() {
-      this.fetchData();
+      this.fetchData()
     },
     methods: {
       // skapar fetch funktionen
       async fetchData() {
         //säger vad/vilket json objekt som ska fetchas
-        const res = await fetch('F1.json');
+        const res = await fetch('F1.json')
         //här bestämmer man vad man ska göra med fetchen
-        const result = await res.json();
+        const result = await res.json()
         //this.drivers referarar till den tomma arrayen,
         //om man har fått fram någon info från fetchen i from utav json-data så kommer den att skicka
         // info:n till den tomma arrayen drivers [] som man sedan kan hämtas in i komponenten F1Cards
         // console.log(result)
-        this.drivers = result;
+        this.drivers = result
         // console.log('this.drivers: ', this.drivers[0].images);
       }
     }
-  };
+  }
 </script>
 
 <style scoped>
